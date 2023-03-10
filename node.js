@@ -185,3 +185,51 @@ console.log(mydate.getHours());*/
 //IN CONSOLE OF BROWSER
 //document
 //document.location
+//document is used to acesss html elements
+//we can dynamically access elements using this , eg ; click elements
+let elem = document.getElementById("sri_click")
+//console.log(elem);
+//i.e document.getElementById("click").style.border = 'blue 2px solid blue'
+//elem.style.background = "yellow"
+//for class
+let elemclass = document.getElementsByClassName("container")
+//elemclass[1].style.background = "blue"
+//lets add a class inside elemclass[1] class 
+elemclass[1].classList.add("bg-primary") //it was added in css
+elemclass[1].classList.add("text-sucess") //not added in css or anywhere else but still will be creted in element of DT
+elemclass[1].classList.add("ts")
+elemclass[1].classList.remove("text-sucess") 
+//lets access the inner html of the div
+elemclass[0].innerHTML //try in console or cosle.log(..)
+//console.log(elemclass[1].innertext)
+tn = document.getElementsByTagName("div")
+//console.log(tn)
+createdelement = document.createElement('p');
+//console.log(createdelement)
+createdelement.innerText = "This is created Para";
+
+//tn[0].appendchild(createdelement)//append in the element
+//removechild(element), remove an element
+
+
+//selecting using query
+sel = document.querySelector('.container')//returs first div having class name container
+console.log(sel)
+sel = document.querySelectorAll('.container')//returs a node list of all classes of name container
+console.log(sel)
+//query selector uses same method as in CSS to select an element
+sel2 = document.querySelector('#First_cont') //using id 
+console.log(sel2)
+
+//Events is JS
+function clicked(){
+    console.log("the button was clicked.")
+}
+ //Problem JS clciked
+
+First_cont.addEventListener('click',function(){console.log("Click click")})
+First_cont.addEventListener('mouseover',function(){console.log("Mouse on Container")})
+First_cont.addEventListener('mouseout',function(){console.log("Mouse out of Container")})
+
+
+

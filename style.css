@@ -6,3 +6,15 @@
      color: salmon;
      text-align: center;   
 }
+.container{
+     background-color: aqua;
+     border-color: 2px red;
+     margin: 3px 0;
+     padding: 10px;
+}
+.bg-primary{
+     background-color: violet;
+}
+.ts{
+     color: red;
+}
